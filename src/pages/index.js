@@ -5,6 +5,7 @@ import styles from '@component/styles/Home.module.css'
 import Link from 'next/link'
 import Show from '../components/show'
 import Countdown from '../components/countdown'
+import Marquee from 'react-fast-marquee'
 
 export default function Home() {
   return (
@@ -63,7 +64,7 @@ export default function Home() {
         </section>
 
         <section className={styles.shows}>
-        <h2>Check Our Other Shows</h2>
+          <Marquee className={styles.marquee}speed= {150} gradient= {false}><h2>Check Our Other Shows</h2></Marquee>
           <div className={styles.showsdiv}>
           <Show props={{
             title:"Better",
