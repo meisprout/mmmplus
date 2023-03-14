@@ -12,9 +12,23 @@
   width: 100%; 
   height: 100%; 
   object-fit: cover;
-  border-radius: 4rem;
+  border-radius: 2rem;
 }
 
 .txtcontainer{
     padding:2rem;
+}
+
+.txtcontainer button{
+    margin-top:2rem;
+    background-color: #FE3C8D;
+    border: 3px solid #FE3C8D;
+    color: #ECECEC;
+    transition: all 0.5s;
+}
+
+.txtcontainer button:hover{
+    background-color: #ECECEC;
+    border: 3px solid #12021C;
+    color: #12021C;
 }

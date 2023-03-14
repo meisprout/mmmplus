@@ -7,12 +7,12 @@ export default function Show({props}) {
     return (
         <div className={styles.container}>
             <div className={styles.imgcontainer}>
-                <Image src={props.image} layout='fill'/>
+                <Image src={props.image} alt={props.title} layout='fill'/>
             </div>
             <div className={styles.txtcontainer}>
                 <h3>{props.title}</h3>
                 <p>{props.description}</p>
-                <Link href={props.link}>Know More</Link>
+                <Link href={props.link}><button>Know More</button></Link>
             </div>
         </div>
     )

@@ -13,11 +13,10 @@
   object-fit: cover;
 }
 
-.herodesc{
+.hero{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -28,12 +27,46 @@
   height:100vh;
 }
 
+.herodesc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top:10rem;
+}
+
+.herodesc button{
+  background-color: #FE3C8D;
+  border: 3px solid #FE3C8D;
+  color: #ECECEC;
+  transition: all 0.5s;
+}
+
+.herodesc button:hover{
+  background-color: #12021C;
+  border: 3px solid #ECECEC;
+}
+
+.logo{
+  position: relative;
+  width: 50vw;
+  height:4rem;
+  margin:1rem 0;
+}
+
+.logo img{
+  width: 100%; 
+  height: 100%; 
+  object-fit: fit;
+}
+
 .about{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding:10rem 4rem;
+  padding:20rem 4rem;
   text-align: center;
   background: radial-gradient(50% 50% at 50% 50%, #ECECEC 0%, #FE3C8D 100%);;
   color:#12021C;
@@ -41,6 +74,20 @@
 
 .about h2{
   font-size:6rem;
+}
+
+.about button{
+  margin:0 1rem;
+  background-color: #12021C;
+  border: 3px solid #12021C;
+  color: #ECECEC;
+  transition: all 0.5s;
+}
+
+.about button:hover{
+  background-color: #ECECEC;
+  border: 3px solid #FE3C8D;
+  color: #FE3C8D;
 }
 
 .moonsun{
@@ -85,10 +132,81 @@
   color:#FE3C8D;
 }
 
+.shows h2{
+  padding-top:4rem;
+}
+
 .showsdiv{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-gap: 4rem;
-  padding:2rem;
+  grid-gap:4rem;
+  padding: 4rem;
   text-align: center;
 }
+
+.main footer{
+  background: radial-gradient(50% 50% at 50% 50%, #FE3C8D 0%, #12021C 100%);
+  color:#ECECEC;
+  padding:10rem;
+  padding-bottom: 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainfooter input{
+  margin-top: 2rem;
+  background-color: #ECECEC;
+}
+
+.mainfooter button{
+  margin:0 1rem;
+  background-color: #12021C;
+  border: 3px solid #12021C;
+  color: #ECECEC;
+  transition: all 0.5s;
+}
+
+.mainfooter button:hover{
+  background-color: #FE3C8D;
+  border: 3px solid #ECECEC;
+}
+
+.socmed{
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.socmedicon{
+  position: relative;
+  width:5rem;
+  height:5rem;
+}
+
+.socmedicon img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  opacity: 0.75;
+  transition: all 0.5s;
+}
+
+.socmedicon img:hover{
+  opacity: 1;
+}
+
+.footernote{
+  margin-top: 8rem;
+}
+
+.footernote, .footernote a{
+  font-size: 1.5rem;
+}
+
+.footernote a{
+  text-decoration: underline dotted;
+}
+

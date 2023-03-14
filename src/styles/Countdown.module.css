@@ -1,0 +1,10 @@
+.countdown{
+    display: flex;
+    gap:4rem;
+    margin:2rem;
+    text-align: center;
+}
+
+.countdown p{
+    text-transform: uppercase;
+}
