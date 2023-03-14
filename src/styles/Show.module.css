@@ -1,0 +1,20 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgcontainer{
+    position: relative;
+    height:25vw;
+}
+
+.imgcontainer img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 4rem;
+}
+
+.txtcontainer{
+    padding:2rem;
+}

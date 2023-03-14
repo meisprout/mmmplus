@@ -1,0 +1,94 @@
+.main header{
+  overflow: hidden;
+}
+
+.videocontainer{
+  width: 100vw;
+  height:100vh;
+}
+
+.videocontainer video {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+.herodesc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #12021C56;
+  color:#ECECEC;
+  width:100%;
+  height:100vh;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:10rem 4rem;
+  text-align: center;
+  background: radial-gradient(50% 50% at 50% 50%, #ECECEC 0%, #FE3C8D 100%);;
+  color:#12021C;
+}
+
+.about h2{
+  font-size:6rem;
+}
+
+.moonsun{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.moonsundiv{
+  position: relative;
+  height:100vh;
+}
+
+.moonsundiv img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+.moonsundiv div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #12021C56;
+  color:#ECECEC;
+  width:100%;
+  height:100vh;
+  transition: all 0.5s;
+}
+
+.moonsundiv div:hover{
+  background-color: #ecececa0;
+  color:#FE3C8D;
+}
+
+.shows{
+  background-color: #ececec;
+  color:#FE3C8D;
+}
+
+.showsdiv{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 4rem;
+  padding:2rem;
+  text-align: center;
+}
