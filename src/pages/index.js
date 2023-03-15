@@ -19,8 +19,9 @@ export default function Home() {
       <main className={styles.main}>
         <header>
           <div className={styles.videocontainer}>
-            <video autoPlay loop alt="chico malo">
-              <source src="/bgvideo.mp4" />
+            <video autoPlay loop poster alt="chico malo">
+              <source src="/bgvideo.mp4" type="video/mp4"/>
+              <source src="/bgvideo.webm" type="video/webm"/>
             </video>
           </div>
             
