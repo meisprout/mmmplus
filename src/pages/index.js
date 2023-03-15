@@ -19,15 +19,15 @@ export default function Home() {
       <main className={styles.main}>
         <header>
           <div className={styles.videocontainer}>
-            <video autoPlay loop poster alt="chico malo">
-              <source src="/bgvideo.mp4" type="video/mp4"/>
-              <source src="/bgvideo.webm" type="video/webm"/>
+            <video autoPlay loop poster="/images/videoposter.png" alt="chico malo">
+              <source src="./bgvideo.mp4" type="video/mp4"/>
+              <source src="./bgvideo.webm" type="video/webm"/>
             </video>
           </div>
             
           <div className={styles.hero}>
             <div className={styles.logo}>
-              <Image src="/logo.svg" layout='fill'/>
+              <Image src="./logo.svg" layout='fill'/>
             </div>
             <div className={styles.herodesc}>
               <h1>Act 1 Scene 1</h1>
