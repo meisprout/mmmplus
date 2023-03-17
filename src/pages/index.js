@@ -35,14 +35,14 @@ export default function Home() {
 
               <Countdown/>
 
-              <Link href="https://twitter.com/RBW_MAMAMOO/status/1633845097333944324?s=20"><button>Get Your Tickets Now</button></Link>
+              <Link href="https://www.youtube.com/watch?v=3gD30gOS0l8"><button>Get Your Tickets Now</button></Link>
               </div>
           </div>
         </header> 
 
         <section className={styles.about}>
           <h2>MAMAMOO+ (마마무+) is the first subunit of the girl group MAMAMOO. They debuted on August 30, 2022 with BETTER.</h2>
-          <Link href="https://twitter.com/RBW_MAMAMOO/status/1634932259324141571?s=20"><button>Know More</button></Link>
+          <Link href="https://www.youtube.com/watch?v=4ltVLAPg858"><button>Know More</button></Link>
         </section>
 
         <section className={styles.moonsun}>
