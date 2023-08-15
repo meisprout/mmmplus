@@ -1,0 +1,40 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #FE3C8D;
+    border-radius: 4rem;
+    padding:2rem;
+}
+
+.imgcontainer{
+    position: relative;
+    height:80vh;
+    width:25vw;
+}
+
+.imgcontainer img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.txtcontainer{
+    padding:2rem 0;
+}
+
+.container button{
+    margin-top:2rem;
+    background-color: #FE3C8D;
+    border: 3px solid #FE3C8D;
+    color: #ECECEC;
+    transition: all 0.5s;
+}
+
+.container button:hover{
+    background-color: #ECECEC;
+    border: 3px solid #12021C;
+    color: #12021C;
+    transform: translateY(-5px);
+}

@@ -15,6 +15,12 @@ html{
   font-size: 62.5%;;
 }
 
+body{
+  background-color: #ECECEC;
+  color: #fe3c8d;
+  
+overflow-x: hidden;
+}
 ::selection {
   background-color: #fe3c8d85;
   color: #ECECEC;

@@ -4,7 +4,8 @@ import { Inter } from 'next/font/google'
 import styles from '@component/styles/Home.module.css'
 import Link from 'next/link'
 import Show from '../components/show'
-import Countdown from '../components/countdown'
+import Track from '../components/track'
+import Venue from '@component/components/venue'
 import Marquee from 'react-fast-marquee'
 
 export default function Home() {
@@ -17,7 +18,172 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <h1>Site under construction! Thanks for understanding!</h1>
+        <header className={styles.hero}>
+          <div className={styles.logo}>
+            <Image src="/logo.svg" layout='fill'/>
+          </div>
+
+          <div className={styles.herodesc}>
+
+            <h1>
+                <div>
+                  <span class="line">Act 1 Scene 1</span>
+                </div>
+                <div>
+                  <span class="line">NOW SHOWING!</span>
+                </div>
+            </h1>
+              <p>ACT 1 SCENE 1 is filled with Solar and Moonbyul&apos;s amazing chemistry. With both of them having different charms, from pair choreo, they will be showing a different charm of theirs through pair choreo and harmonies.</p>
+              <Link href="https://www.youtube.com/watch?v=I4HWnYSiRtE"><button>Get Your Tickets Now</button></Link>
+            
+
+            <div className={styles.imgcontainer}>
+                  <Image src="/images/hero.png" layout='fill'/>
+            </div>
+          </div>
+        </header> 
+
+        
+        <section className={styles.tracks}>
+          <h2>
+            <div>
+              <span class="line">WHAT TO LOOK OUT FOR IN</span>
+            </div>
+            <div>
+              <span class="line">ACT 1 SCENE 1</span>
+            </div>
+          </h2>
+
+          <div className={styles.tracklist}>
+            <Track props={{
+              title:"GGBB",
+              description:"Potraying the side of a person falling into the kind of relationship that makes them go out of their mind.",
+              image:"/images/ggbb.png"
+            }}/>
+            <Track props={{
+              title:"LLL",
+              description:"Exploring how it feels to love and be loved.",
+              image:"/images/lll.png"
+            }}/>
+            <Track props={{
+              title:"Chico Malo",
+              description:"An strong show about intense anger, pain, and angst. Featuring Korean Traditional musician Kim Junsu's Aniri.",
+              image:"/images/chicomalo.png"
+            }}/>
+          </div>
+        </section>
+
+        <section className={styles.venues}>
+          <Marquee className={styles.marquee}speed= {200} gradient= {false}><h2>Get your tickets now!</h2></Marquee>
+          <h2>Showing Near You</h2>
+
+          <div className={styles.venuediv}>
+            <Venue props={{
+                show:"MCountdown",
+                date:"March 30, 2023",
+                time:"8:30PM",
+                link:"https://youtu.be/qXVASnCRId8"
+              }}/>
+              <Venue props={{
+                show:"Music Bank",
+                date:"March 31, 2023",
+                time:"2:21PM",
+                link:"https://youtu.be/UhsLEL-4tAA"
+              }}/>
+              <Venue props={{
+                show:"1TheK",
+                date:"April 1, 2023",
+                time:"12:22PM",
+                link:"https://youtu.be/EO4u7SCtfcQ"
+              }}/>
+          </div>
+          
+          <p className={styles.morenote}>More coming soon!</p>
+          <Marquee className={styles.marquee}speed= {200} gradient= {false}><h2>Get your tickets now!</h2></Marquee>
+
+        </section>
+        <section className={styles.about}>
+          <h2>MAMAMOO+ (마마무+) is the first subunit of the girl group MAMAMOO. They debuted on August 30, 2022 with BETTER.</h2>
+          <Link href="https://twitter.com/RBW_MAMAMOO/status/1634932259324141571?s=20"><button>Know More</button></Link>
+        </section>
+        <section className={styles.moonsun}>
+          <div className={styles.moonsundiv}>
+            <Image src="/images/moonbyul.png" layout='fill'/>
+            <Link href="https://www.instagram.com/mo_onbyul/">
+              <div>
+                <h2>Moonbyul</h2>
+              </div>
+            </Link>
+          </div>
+          <div className={styles.moonsundiv}>
+            <Image src="/images/solar.png" layout='fill'/>
+              <Link href="https://www.instagram.com/solarkeem/">
+                <div>
+                  <h2>Solar</h2>
+                </div>
+              </Link>
+          </div>
+        </section>
+
+        <section className={styles.shows}>
+          <Marquee className={styles.marquee}speed= {150} gradient= {false}><h2>Check Our Other Shows</h2></Marquee>
+          <div className={styles.showsdiv}>
+            <Show props={{
+              title:"Better",
+              description:"The very first performance of MAMAMOO+ as a duo, featuring Big Naughty.",
+              link:"https://www.youtube.com/watch?v=eH8jn4W8Bqc",
+              image:"/images/better.png"
+            }}/>
+            <Show props={{
+              title:"Mic On",
+              description:"An iconic show with Performance Ace Wheein and Queen of Korea Hwasa.",
+              link:"https://www.youtube.com/watch?v=Vz508O9NNTg",
+              image:"/images/micon.png"
+            }}/>
+            <Show props={{
+              title:"Face",
+              description:"Solar unleashed her various capabilities with her solo show.",
+              link:"https://www.youtube.com/watch?v=UHiSc_M0xQU",
+              image:"/images/face.png"
+            }}/>
+            <Show props={{
+              title:"Cheese In The Trap",
+              description:"Three perspectives of love portrayed by Moonbyul on her one woman show.",
+              link:"https://www.youtube.com/watch?v=xf3OzncHmfE",
+              image:"/images/ciit.png"
+            }}/>
+          </div>
+        </section>
+
+        <footer>
+          <div className={styles.mainfooter}>
+            <h2>Subscribe to our newsletter</h2>
+            <p>This actually does not work. This is not even real.  Just type anything your heart wishes!</p>
+            <div className={styles.subscription}>
+              <input placeholder="example@email.com"></input>
+              <button>Subscribe</button>
+            </div>
+              
+            <div className={styles.socmed}>
+              <div className={styles.socmedicon}>
+                <Link href="https://www.facebook.com/RBW.MAMAMOO"><Image src="/icons/facebook.svg" layout='fill' alt="facebook"/></Link>
+              </div>
+              <div className={styles.socmedicon}>
+                <Link href="https://twitter.com/RBW_MAMAMOO"><Image src="/icons/twitter.svg" layout='fill' alt="twitter"/></Link>
+              </div>
+              <div className={styles.socmedicon}>
+                <Link href="https://www.instagram.com/mamamoo_official/?hl=en"><Image src="/icons/instagram.svg" layout='fill' alt="instagram"/></Link>
+              </div>
+              <div className={styles.socmedicon}>
+                <Link href="https://www.youtube.com/channel/UCuhAUMLzJxlP1W7mEk0_6lA"><Image src="/icons/youtube.svg" layout='fill' alt="youtube"/></Link>
+              </div>
+              <div className={styles.socmedicon}>
+                <Link href="https://open.spotify.com/artist/2uGx10VkBrI3GBvnQl81du"><Image src="/icons/spotify.svg" layout='fill' alt="spotify"/></Link>
+              </div>
+            </div>
+          </div>
+          <p className={styles.footernote}>Note: This is a fanproject designed and developed by <Link href="https://twitter.com/loafsprout">loafsprout</Link>. This site is not formally associated with MAMAMAOO or RBW. Basteleur font by Velvetyne TF.</p>
+        </footer>
 
       </main>
     </>
